@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  max-width: 550px;
+  min-width: 280px;
+  height: 65px;
+  margin: 0 auto;
+  padding: 0 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Karla;
+  color: #fff;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+}
+
+.troll {
+  width: 31px;
+}
+
+.title {
+  margin-left: 0.5rem;
+  margin-right: auto;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.text {
+  text-align: right;
+  font-family: Inter;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 540px) {
+  .header {
+    height: 90px;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+.form {
+  width: 100%;
+  max-width: 550px;
+  min-width: 280px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 0 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Karla;
+  background: #fff;
+}
+
+.inputContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.input {
+  width: 230px;
+  padding: 10px;
+  align-self: center;
+  border: 1px solid #D5D4D8;;
+  border-radius: 5px;
+  font-family: Karla;
+}
+
+.getButtonContainer {
+  width: 100%;
+  margin: 0 35px;
+}
+
+.getButton {
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-family: Karla;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  background: linear-gradient(90deg, #711f8d 1.14%, #a818da 100%);
+}
+
+.getButton::after {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  margin-bottom: -5px;
+  background: url(../../assets/image-frame.png);
+  background-size: cover;
+  content: ' ';
+}
+
+.memeImage {
+  width: 100%;
+  margin-bottom: 55px;
+}
