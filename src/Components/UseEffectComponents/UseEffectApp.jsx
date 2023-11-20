@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import Home from './Home';
 
 export default function UseEffectApp() {
 
@@ -27,14 +28,15 @@ export default function UseEffectApp() {
 
     return (
         <>
-            <h1>UseEffect Components</h1>
+            {/* <h1>UseEffect Components</h1>
             <div>
                 <button onClick={clickhandler1}>+</button>
                 <p>{count1}</p>
                 <br />
                 <button onClick={clickhandler2}>+</button>
                 <p>{count2}</p>
-            </div>
+            </div> */}
+            <Home />
         </>
     )
 }
