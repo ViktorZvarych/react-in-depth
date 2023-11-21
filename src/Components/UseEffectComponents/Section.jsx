@@ -1,13 +1,15 @@
-import { useState, UseEffect } from "react"
+import { useState, useEffect } from "react"
 
 export default function Section() {
     const [time, setTime] = useState(0);
 
-    UseEffect(() => {
-        const timeIntervalId = setInterval(() => (useState(time + 1)), 1000);
+    useEffect (() => console.log('Section re-render'));
 
-        return clearInterval(timeIntervalId);
-    });
+    useEffect(() => {
+        const timeIntervalId = setInterval(() => (setTime(prevTime => prevTime + 1)), 1000);
+
+        return () => clearInterval(timeIntervalId);
+    }, [time]);
 
     
 
